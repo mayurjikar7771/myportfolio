@@ -18,7 +18,7 @@ const AppHeader = () => {
             <div className="header">
             <div className="logo">
                  <i className="fas fa-bolt"></i>
-                 <a href="http://google.com">Tech</a>
+                 <a href="http://google.com">Technical Blogs</a>
             </div>
             {/* <Menu  mode="horizontal" defaultSelectedKeys={['home']}>
                 <Menu.Item key="home">Home</Menu.Item>
@@ -32,12 +32,12 @@ const AppHeader = () => {
              <div className="mobileHidden">
                  <Anchor targetOffset="65"> 
                     <Link href="#hero" title="Home" />
-                    <Link href="#about" title="About" />
                     <Link href="#feature" title="Features" />
                     <Link href="#works" title="How it works" />
-                    <Link href="#faq" title="FAQ" />
-                    <Link href="#pricing" title="Pricing" />
+                    {/* <Link href="#pricing" title="Pricing" /> */}
+                    <Link href="#about" title="About" />
                     <Link href="#contact" title="Contact" />
+                    <Link href="#faq" title="FAQ" />
                   </Anchor>
                </div>
                <div className="mobileVisible">

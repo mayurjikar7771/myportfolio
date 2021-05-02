@@ -1,22 +1,18 @@
 import React from 'react';
 
-import image1 from '../../assets/images/modern-design.jpg';
-import image2 from '../../assets/images/clean-design.jpg';
+import image1 from '../../assets/images/front_end.png';
+import image2 from '../../assets/images/Back-End.jpg';
 import image3 from '../../assets/images/great-support.jpg';
 import image4 from '../../assets/images/easy-customise.jpg';
 import image5 from '../../assets/images/unlimited-features.jpg';
 import image6 from '../../assets/images/advanced-option.jpg';
 
-import { Col, Row} from 'antd';
+import { Col, Row, Button } from 'antd';
 import { Card } from 'antd';
 
 const { Meta } = Card;
-
-
-
-
-
-const AppFeature = () => {
+class AppFeature extends React.Component{
+  render(){
     return(
         <div id="feature" className="block featureBlock bgGray">
         <div className="container-fluid">
@@ -29,48 +25,99 @@ const AppFeature = () => {
               <Card
                 hoverable
                 cover={<img alt="Modern Design" src={image1} />}
-              >
-                <Meta title="Modern Design" />
+
+                actions={[
+                  <Button type="primary" ghost>
+                    <b>See Details</b>
+                  </Button>
+                  ]}
+                 >
+
+                <Meta title="Front End Technolgy" 
+                description="Material Dashboard PRO React is a Premium Material-UI@4.1.0 Admin with a fresh, new design inspired by Google's Material Design. We are very excited to introduce our take on the material concepts."
+                />
               </Card>
             </Col>
             <Col xs={{ span: 24 }} sm={{ span: 12 }} md={{ span: 8 }}>
               <Card
                 hoverable
                 cover={<img alt="Test" src={image2} />}
+
+                actions={[
+                  <Button type="primary" ghost>
+                    <b>See Details</b>
+                  </Button>
+                  ]}
+                 
               >
-                <Meta title="Clean and Elegant" />
+                <Meta title="Back End Technology " 
+                      description="Material Dashboard PRO React is a Premium Material-UI@4.1.0 Admin with a fresh, new design inspired by Google's Material Design. We are very excited to introduce our take on the material concepts."
+                />
               </Card>
             </Col>
             <Col xs={{ span: 24 }} sm={{ span: 12 }} md={{ span: 8 }}>
               <Card
                 hoverable
                 cover={<img alt="Test" src={image3} />}
+
+                actions={[
+                  <Button type="primary" ghost>
+                    <b>See Details</b>
+                  </Button>
+                  ]}
               >
-                <Meta title="Great Support" />
+                <Meta title="Software Testing" 
+                      description="Material Dashboard PRO React is a Premium Material-UI@4.1.0 Admin with a fresh, new design inspired by Google's Material Design. We are very excited to introduce our take on the material concepts."
+                />
               </Card>
             </Col>
             <Col xs={{ span: 24 }} sm={{ span: 12 }} md={{ span: 8 }}>
               <Card
                 hoverable
                 cover={<img alt="Test" src={image4} />}
+
+                actions={[
+                  <Button type="primary" ghost>
+                    <b>See Details</b>
+                  </Button>
+                  ]}
+                 
               >
-                <Meta title="Easy to customise" />
+                <Meta title="Mobile Development" 
+                      description="Material Dashboard PRO React is a Premium Material-UI@4.1.0 Admin with a fresh, new design inspired by Google's Material Design. We are very excited to introduce our take on the material concepts."
+                />
               </Card>
             </Col>
             <Col xs={{ span: 24 }} sm={{ span: 12 }} md={{ span: 8 }}>
               <Card
                 hoverable
                 cover={<img alt="Test" src={image5} />}
+
+                actions={[
+                  <Button type="primary" ghost>
+                    <b>See Details</b>
+                  </Button>
+                  ]}
               >
-                <Meta title="Unlimited Features" />
+                <Meta title="Development Tools" 
+                      description="Material Dashboard PRO React is a Premium Material-UI@4.1.0 Admin with a fresh, new design inspired by Google's Material Design. We are very excited to introduce our take on the material concepts."
+                />
               </Card>
             </Col>
             <Col xs={{ span: 24 }} sm={{ span: 12 }} md={{ span: 8 }}>
               <Card
                 hoverable
                 cover={<img alt="Test" src={image6} />}
+
+                actions={[
+                  <Button type="primary" ghost>
+                    <b>See Details</b>
+                  </Button>
+                  ]}
               >
-                <Meta title="Advanced Options" />
+                <Meta title="Data Science" 
+                      description="Material Dashboard PRO React is a Premium Material-UI@4.1.0 Admin with a fresh, new design inspired by Google's Material Design. We are very excited to introduce our take on the material concepts."
+                />
               </Card>
             </Col>
           </Row>
@@ -79,5 +126,5 @@ const AppFeature = () => {
        
     );
 }
-
+}
 export default AppFeature;
